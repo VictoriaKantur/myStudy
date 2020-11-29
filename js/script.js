@@ -17,22 +17,33 @@ const personalMovieDB = {
 
 //3 Exsercice
 
-/*const filmName = prompt("Can you name the film you`ve watched recently?", ""),
-      filmRate = +prompt("Rate this film", ""),
-
-      filmName2 = prompt("Can you name the film you`ve watched recently?", ""),
-      filmRate2 = +prompt("Rate this film", "");
-
-    personalMovieDB.movies[filmName] = filmRate;
-    personalMovieDB.movies[filmName2] = filmRate2;*/
-
-    for(let i = 0; i < 2; i++)
+  /*  for(let i = 0; i < 2; i++)
     {
-        const filmN = [];
-        const filmR = [];
-        filmN [i] = prompt("Can you name the film you`ve watched recently?", "");
-        filmR [i] = +prompt("Rate this film", "");
-        personalMovieDB.movies[filmN[i]] = filmR [i];       
-    }
 
-    console.log(personalMovieDB.movies); 
+        const filmN = prompt("Can you name the film you`ve watched recently?", 
+        "");
+        const filmR = +prompt("Rate this film", "");
+
+        if(filmN.length < 50 && filmN != null && filmR != null && 
+            filmN == "" && filmR == "")
+        {
+            personalMovieDB.movies[filmN] = filmR; 
+            console.log("Done"); 
+        } else {
+            console.log("Error"); 
+            i--;
+        }
+              
+    }*/
+    // 4 Ex
+
+    if(personalMovieDB.count < 10)
+    {
+        console.log("Not enought");
+    } else if (personalMovieDB.count > 10 && personalMovieDB.count3 < 30){
+        console.log("Wow, you`re cool");
+    } else if (personalMovieDB.count > 30){
+        console.log("You`re cinoholoc");
+    } else {console.log("Error");
+    }  
+    
